@@ -1,0 +1,38 @@
+name: Update EPG
+
+on:
+  schedule:
+    - cron: "0 0,12 * * *"
+  workflow_dispatch:
+
+jobs:
+  grab-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Clone iptv-org/epg
+        run: |
+          git clone --depth 1 -b master https://github.com/iptv-org/epg.git epg-src
+          cd epg-src && npm ci
+
+      - name: Grab guide
+        run: |
+          cd epg-src
+          npm run grab -- \
+            --channels=../channels.xml \
+            --output=../public/guide.xml \
+            --maxConnections=5
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
+          vercel-args: "--prod"
+          working-directory: ./

@@ -1,0 +1,7 @@
+{
+  "name": "epg-vercel",
+  "private": true,
+  "scripts": {
+    "grab": "npm --prefix epg-src run grab -- --channels=../channels.xml --output=../public/guide.xml"
+  }
+}
