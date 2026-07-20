@@ -8,14 +8,21 @@ on:
 jobs:
   download-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download EPG from iptv-epg.org
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Clone iptv-org/epg and grab EPG data
         run: |
-          curl -sL "https://iptv-epg.org/files/epg-us.xml.gz" -o public/guide.xml.gz
-          ls -lh public/guide.xml.gz
+          git clone --depth 1 https://github.com/iptv-org/epg.git /tmp/epg
+          cd /tmp/epg
+          npm install
+          npx epg-grabber --config=sites/config.js --channels=${{ github.workspace }}/channels.xml --output=${{ github.workspace }}/public/guide.xml
+          ls -lh ${{ github.workspace }}/public/guide.xml
 
       - name: Deploy to Vercel
         run: |

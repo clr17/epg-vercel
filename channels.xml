@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- National Cable/Satellite (directv.com) -->
+  <channel site="directv.com" site_id="3eb71a0d-48b1-459a-be81-c229062bb18c" lang="en" xmltv_id="">FOX Weather</channel>
+  <channel site="directv.com" site_id="a368c1d1-d258-4e80-9448-b9ef3a8271c7" lang="en" xmltv_id="">AccuWeather</channel>
+  <channel site="directv.com" site_id="dd85480a-4cf2-446c-ab67-3deb7ea00581" lang="en" xmltv_id="">Newsmax TV</channel>
+  <channel site="directv.com" site_id="4adb6040-f730-4e88-be8c-742a12943915" lang="en" xmltv_id="">ACC Network</channel>
+  <channel site="directv.com" site_id="38fa4074-8901-45d1-be15-2fcaf7e54f24" lang="en" xmltv_id="">BBC News</channel>
+  <channel site="directv.com" site_id="9a1380bd-3201-4fdd-a46e-c71a0453c87a" lang="en" xmltv_id="">Big Ten Network</channel>
+  <channel site="directv.com" site_id="697a34e7-d326-4dfd-9275-119b341be23b" lang="en" xmltv_id="">FOX East</channel>
+  <channel site="directv.com" site_id="772f7eca-a5ff-4072-b3d8-6a082f4586fd" lang="en" xmltv_id="">Fox News Channel</channel>
+  <channel site="directv.com" site_id="9f07c24a-045f-42b4-90a7-fee624e62356" lang="en" xmltv_id="">Fox Sports</channel>
+  <channel site="directv.com" site_id="516bf591-7d24-4851-8f25-1bb4fb3fba79" lang="en" xmltv_id="">NBC West</channel>
+  <channel site="directv.com" site_id="5576b285-b115-44e1-9789-1803ab7091fd" lang="en" xmltv_id="">NewsNation</channel>
+  <channel site="directv.com" site_id="8c6223d2-9bf7-4449-8ee6-a9f1cc2cc880" lang="en" xmltv_id="">NFL Network</channel>
+  <channel site="directv.com" site_id="b7dd0c3c-d22b-4a6b-b360-dcaf56deab7f" lang="en" xmltv_id="">Smithsonian Channel</channel>
+  <channel site="directv.com" site_id="0ae8d67d-2284-4e26-a2f9-4ba1b2819ff9" lang="en" xmltv_id="">Nick Jr.</channel>
+  <channel site="directv.com" site_id="4b524e42-aee7-448b-968a-a05f83bebe49" lang="en" xmltv_id="">Comedy Central</channel>
+
+  <!-- OAN (epgshare01.online) -->
+  <channel site="epgshare01.online" site_id="US1#One.America.News.Network.us" lang="en" xmltv_id="">One America News</channel>
+
+  <!-- Local Broadcast Stations (tvpassport.com) -->
+  <channel site="tvpassport.com" site_id="abc-komo-seattle-wa-hd/2829" lang="en" xmltv_id="">ABC (KOMO) Seattle, WA</channel>
+  <channel site="tvpassport.com" site_id="abc-kmgh-denver-co-hd/5723" lang="en" xmltv_id="">ABC (KMGH) Denver, CO</channel>
+  <channel site="tvpassport.com" site_id="abc-wftv-orlando-fl-hd/5725" lang="en" xmltv_id="">ABC (WFTV) Orlando, FL</channel>
+  <channel site="tvpassport.com" site_id="abc-knxv-phoenix-az-hd/5721" lang="en" xmltv_id="">ABC (KNXV) Phoenix, AZ</channel>
+  <channel site="tvpassport.com" site_id="cbs-kcci-des-moines-ia-hd/6377" lang="en" xmltv_id="">CBS (KCCI) Des Moines, IA</channel>
+  <channel site="tvpassport.com" site_id="cbs-wpec-west-palm-beach-fl-hd/8256" lang="en" xmltv_id="">CBS (WPEC) West Palm Beach, FL</channel>
+  <channel site="tvpassport.com" site_id="cbs-keye-austin-tx-hd/4831" lang="en" xmltv_id="">CBS (KEYE) Austin, TX</channel>
+  <channel site="tvpassport.com" site_id="cbs-wfor-miami-fl-hd/7033" lang="en" xmltv_id="">CBS (WFOR) Miami, FL</channel>
+  <channel site="tvpassport.com" site_id="nbc-wjar-cranston-ri-hd/6396" lang="en" xmltv_id="">NBC (WJAR) Providence, RI</channel>
+
+  <!-- Newsmax 2 (tvpassport.com) -->
+  <channel site="tvpassport.com" site_id="newsmax-2-kaap-ld8-santa-cruz-ca/36414" lang="en" xmltv_id="">Newsmax 2</channel>
+
+  <!-- OAN Plus (ontvtonight.com) -->
+  <channel site="ontvtonight.com" site_id="us#69045184/kagw-oan-plus" lang="en" xmltv_id="">OAN Plus</channel>
+
+  <!-- Russia Today (ontvtonight.com) -->
+  <channel site="ontvtonight.com" site_id="us#69032340/russia-today-north-america" lang="en" xmltv_id="">RT News</channel>
+
+  <!-- Syndicated (tvpassport.com) -->
+  <channel site="tvpassport.com" site_id="syn-american-ninja-warrior/32676" lang="en" xmltv_id="">American Ninja Warrior</channel>
+  <channel site="tvpassport.com" site_id="syn-macgyver/36449" lang="en" xmltv_id="">MacGyver</channel>
+</channels>
