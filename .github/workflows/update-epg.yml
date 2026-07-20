@@ -28,8 +28,6 @@ jobs:
           
           cat epg-src/sites/epgshare01.online/epgshare01.online_US1.channels.xml \
             | grep '<channel ' >> channels.xml
-          cat epg-src/sites/epgshare01.online/epgshare01.online_US_LOCALS2.channels.xml \
-            | grep '<channel ' >> channels.xml
           cat epg-src/sites/epgshare01.online/epgshare01.online_US_SPORTS1.channels.xml \
             | grep '<channel ' >> channels.xml
           
