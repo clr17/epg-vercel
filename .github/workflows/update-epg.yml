@@ -26,9 +26,7 @@ jobs:
           echo '<?xml version="1.0" encoding="UTF-8"?>' > channels.xml
           echo '<channels>' >> channels.xml
           
-          cat epg-src/sites/epgshare01.online/epgshare01.online_US1.channels.xml \
-            | grep '<channel ' >> channels.xml
-          cat epg-src/sites/epgshare01.online/epgshare01.online_US_SPORTS1.channels.xml \
+          cat epg-src/sites/ontvtonight.com/ontvtonight.com_us.channels.xml \
             | grep '<channel ' >> channels.xml
           
           echo '</channels>' >> channels.xml
