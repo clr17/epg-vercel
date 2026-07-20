@@ -8,6 +8,7 @@ on:
 jobs:
   grab-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -20,13 +21,40 @@ jobs:
           git clone --depth 1 -b master https://github.com/iptv-org/epg.git epg-src
           cd epg-src && npm ci
 
+      - name: Merge channel lists
+        run: |
+          # Combine all US channel sources into one file
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > channels.xml
+          echo '<channels>' >> channels.xml
+          
+          # epgshare01.online - US cable/premium channels
+          cat epg-src/sites/epgshare01.online/epgshare01.online_US1.channels.xml \
+            | grep '<channel ' >> channels.xml
+          
+          # epgshare01.online - US local broadcast affiliates
+          cat epg-src/sites/epgshare01.online/epgshare01.online_US_LOCALS2.channels.xml \
+            | grep '<channel ' >> channels.xml
+          
+          # epgshare01.online - US sports channels
+          cat epg-src/sites/epgshare01.online/epgshare01.online_US_SPORTS1.channels.xml \
+            | grep '<channel ' >> channels.xml
+          
+          # ontvtonight.com - US channels
+          cat epg-src/sites/ontvtonight.com/ontvtonight.com_us.channels.xml \
+            | grep '<channel ' >> channels.xml
+          
+          echo '</channels>' >> channels.xml
+          
+          echo "Total channels: $(grep -c '<channel ' channels.xml)"
+
       - name: Grab guide
         run: |
           cd epg-src
-          npm run grab -- \
+          NODE_OPTIONS=--max-old-space-size=6000 npm run grab -- \
             --channels=../channels.xml \
             --output=../public/guide.xml \
-            --maxConnections=5
+            --maxConnections=10 \
+            --timeout=60000
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25

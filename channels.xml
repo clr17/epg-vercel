@@ -1,66 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <!-- Broadcast Networks -->
-  <channel site="directv.com" lang="en" xmltv_id="WNBC.us" site_id="9cbb661f-5086-4c0f-94e3-9ca57a3b5642">WNBC (NBC East)</channel>
-  <channel site="directv.com" lang="en" xmltv_id="WABC.us" site_id="c359fc4e-1bea-442b-972e-a55a6ce5aba6">WABC (ABC East)</channel>
-  <channel site="directv.com" lang="en" xmltv_id="WCBS.us" site_id="50e4be08-7078-44c8-90ed-f4608a6aa7cf">WCBS (CBS)</channel>
-  <channel site="directv.com" lang="en" xmltv_id="WNYW.us" site_id="29878ad9-e93b-4b30-9d3f-cf04ca853914">WNYW (FOX HD East)</channel>
-  <channel site="directv.com" lang="en" xmltv_id="PBSKids.us" site_id="46c15402-92e9-4aee-9b2d-e8512c33696a">PBS Kids</channel>
-
-  <!-- Sports -->
-  <channel site="directv.com" lang="en" xmltv_id="ESPN.us" site_id="2c66bc77-c723-46fb-a602-50730b111b39">ESPN</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ESPN2.us" site_id="5a24a595-c58b-4144-9a95-928f1c648d91">ESPN2</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ESPNews.us" site_id="c7385ebe-0068-4c7a-8c84-2146862d2694">ESPNews HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ESPNDeportes.us" site_id="2ec64545-91c5-4f3a-9934-d9633962fe3b">ESPN Deportes HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="FS1.us" site_id="454a64a1-89a7-415b-a315-c3c3ac505198">FOX Sports 1</channel>
-  <channel site="directv.com" lang="en" xmltv_id="NFLNetwork.us" site_id="8c6223d2-9bf7-4449-8ee6-a9f1cc2cc880">NFL Network</channel>
-  <channel site="directv.com" lang="en" xmltv_id="NBATV.us" site_id="5cb6a6db-9440-40c2-8759-6f3475f9b6ea">NBA TV</channel>
-  <channel site="directv.com" lang="en" xmltv_id="MLBNetwork.us" site_id="c7296581-8b43-4e1f-bbd6-484c5e1713a6">MLB Network</channel>
-  <channel site="directv.com" lang="en" xmltv_id="CBSSportsNetwork.us" site_id="2945210e-6289-4402-be3a-6704b027ec50">CBS Sports Network HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="BTN.us" site_id="9a1380bd-3201-4fdd-a46e-c71a0453c87a">BTN HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ACCNetwork.us" site_id="4adb6040-f730-4e88-be8c-742a12943915">ACC Network HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="SECNetwork.us" site_id="3c8abb32-1002-4118-a3b2-2201be88fe5a">SEC Network HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="GolfChannel.us" site_id="35621fc9-1d39-49c7-bdef-4c182d3d07fa">Golf Channel HD</channel>
-
-  <!-- News -->
-  <channel site="directv.com" lang="en" xmltv_id="BBCNews.us" site_id="38fa4074-8901-45d1-be15-2fcaf7e54f24">BBC News</channel>
-  <channel site="directv.com" lang="en" xmltv_id="WeatherChannel.us" site_id="3aa82652-2a94-49db-a4a3-76d5f1c6d843">The Weather Channel</channel>
-  <channel site="directv.com" lang="en" xmltv_id="CNNi.us" site_id="7f7c3e96-628e-43df-bb90-7307f3878140">CNN International</channel>
-  <channel site="directv.com" lang="en" xmltv_id="BloombergTV.us" site_id="9d556827-6bb0-4e70-b843-1ae390321e74">Bloomberg TV HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="CSPAN.us" site_id="6bb55705-16e0-416a-bdde-8617d4f91bc6">C-SPAN</channel>
-
-  <!-- Entertainment - Cable -->
-  <channel site="directv.com" lang="en" xmltv_id="TNT.us" site_id="3c10db4e-98ac-40c0-a301-661504f60588">TNT HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="TBS.us" site_id="86528a42-ae4e-405c-8fae-c567c1ed70df">TBS HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="USANetwork.us" site_id="214a502e-c54a-4b61-8904-b4ce37c1e38a">USA Network HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="AMC.us" site_id="4b1c3363-8495-4f3d-a319-b0a9e1ab0697">AMC</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ComedyCentral.us" site_id="4b524e42-aee7-448b-968a-a05f83bebe49">Comedy Central</channel>
-  <channel site="directv.com" lang="en" xmltv_id="Bravo.us" site_id="3f31ce5a-dac9-4ada-acb3-b9016c4c2bb5">Bravo</channel>
-  <channel site="directv.com" lang="en" xmltv_id="FX.us" site_id="d52ff6be-47ed-488b-bcf2-d483245671b0">FX</channel>
-  <channel site="directv.com" lang="en" xmltv_id="SYFY.us" site_id="7d83b2a7-c1d8-4052-82ea-5624a19667d9">SYFY</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ParamountShowtime.us" site_id="0bba36e4-7802-43c0-ad3f-cc0ff064a518">Paramount+ with SHOWTIME EAST HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="Freeform.us" site_id="4cec7218-4a47-45b9-9f4a-64c050dd9479">Freeform</channel>
-  <channel site="directv.com" lang="en" xmltv_id="Lifetime.us" site_id="128de99f-f5e8-4eda-8c34-989e743b8c09">Lifetime</channel>
-  <channel site="directv.com" lang="en" xmltv_id="BET.us" site_id="17e01f38-d5e2-4d4b-89c6-5f36d76224cf">BET</channel>
-  <channel site="directv.com" lang="en" xmltv_id="MTV.us" site_id="91afef58-5b68-4a58-aa3e-e3383521621b">MTV</channel>
-  <channel site="directv.com" lang="en" xmltv_id="TVLand.us" site_id="a22a1e02-fb9b-4d64-b9e8-2ce5eac89d6d">TV Land HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="truTV.us" site_id="1b10de5e-3e3b-488f-9740-bec197244114">truTV HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="AE.us" site_id="6e1ae46f-40ab-44ee-b20e-d4508363a65e">A&amp;E HD</channel>
-
-  <!-- Reality / Lifestyle -->
-  <channel site="directv.com" lang="en" xmltv_id="TLC.us" site_id="37a0a48a-3ca8-465f-8c4e-cbce36dd0ff3">TLC</channel>
-  <channel site="directv.com" lang="en" xmltv_id="HGTV.us" site_id="b7669e3c-2916-4b8c-b40d-6266e791ab57">HGTV HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="FoodNetwork.us" site_id="8ee8d3ba-e481-47d7-9651-21b39b1ca140">Food Network</channel>
-  <channel site="directv.com" lang="en" xmltv_id="History.us" site_id="46ffcf64-998d-4037-8741-5ed260b08303">History</channel>
-  <channel site="directv.com" lang="en" xmltv_id="Discovery.us" site_id="935e3fe1-7db2-4757-9cd3-17250f1b01c9">Discovery</channel>
-  <channel site="directv.com" lang="en" xmltv_id="AnimalPlanet.us" site_id="7a69165d-3a82-4674-9103-b2b30962e10e">Animal Planet</channel>
-  <channel site="directv.com" lang="en" xmltv_id="NatGeo.us" site_id="47cdf02d-0661-4250-9b8e-c11b8902e1cb">National Geographic</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ID.us" site_id="2d59507f-9a2f-442b-bc83-00938909250f">Investigation Discovery</channel>
-  <channel site="directv.com" lang="en" xmltv_id="Science.us" site_id="5bc45a0d-29b8-4cdc-a0b2-c694a29c51f2">Science</channel>
-  <channel site="directv.com" lang="en" xmltv_id="GSN.us" site_id="d9507af3-62d5-4f24-b733-7fef236d6c59">Game Show Network</channel>
-
-  <!-- Kids -->
-  <channel site="directv.com" lang="en" xmltv_id="Nickelodeon.us" site_id="3914ef4b-2eb7-48f5-99fb-8216ee8e37ad">Nickelodeon East</channel>
-  <channel site="directv.com" lang="en" xmltv_id="CartoonNetwork.us" site_id="b58935e4-74c0-4d19-aa0c-d0557d716f2b">Cartoon Network HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="DisneyChannel.us" site_id="8ef7ede4-94b2-44c3-bced-ecf138fe1c9b">Disney Channel HD</channel>
+  <!--
+    This file is generated by the GitHub Actions workflow.
+    It merges channels from:
+    - epgshare01.online (US1, US_LOCALS2, US_SPORTS1)
+    - ontvtonight.com (US)
+    
+    Total: ~25,000+ US channels
+  -->
 </channels>
