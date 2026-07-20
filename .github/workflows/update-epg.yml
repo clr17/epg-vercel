@@ -6,40 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  grab-and-deploy:
+  download-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Clone iptv-org/epg
+      - name: Download EPG from iptv-epg.org
         run: |
-          git clone --depth 1 -b master https://github.com/iptv-org/epg.git epg-src
-          cd epg-src && npm ci
-
-      - name: Merge channel lists
-        run: |
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > channels.xml
-          echo '<channels>' >> channels.xml
-          
-          cat epg-src/sites/ontvtonight.com/ontvtonight.com_us.channels.xml \
-            | grep '<channel ' >> channels.xml
-          
-          echo '</channels>' >> channels.xml
-          echo "Total channels: $(grep -c '<channel ' channels.xml)"
-
-      - name: Grab guide
-        run: |
-          cd epg-src
-          NODE_OPTIONS=--max-old-space-size=6000 npm run grab -- \
-            --channels=../channels.xml \
-            --output=../public/guide.xml \
-            --maxConnections=10 \
-            --timeout=60000
+          curl -sL "https://iptv-epg.org/files/epg-us.xml.gz" -o public/guide.xml.gz
+          ls -lh public/guide.xml.gz
 
       - name: Deploy to Vercel
         run: |
