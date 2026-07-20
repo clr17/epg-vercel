@@ -21,7 +21,7 @@ jobs:
           git clone --depth 1 https://github.com/iptv-org/epg.git /tmp/epg
           cd /tmp/epg
           npm install
-          npx epg-grabber --config=sites/config.js --channels=${{ github.workspace }}/channels.xml --output=${{ github.workspace }}/public/guide.xml
+          npm run grab --- --channels=${{ github.workspace }}/channels.xml --output=${{ github.workspace }}/public/guide.xml --maxConnections=5
           ls -lh ${{ github.workspace }}/public/guide.xml
 
       - name: Deploy to Vercel
