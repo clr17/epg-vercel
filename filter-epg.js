@@ -61,6 +61,7 @@ while ((chMatch = channelRegex.exec(xml)) !== null) {
   const chBody = chMatch[2]
   let dispMatch
   let isMatch = false
+  displayRegex.lastIndex = 0
   while ((dispMatch = displayRegex.exec(chBody)) !== null) {
     if (matchesChannel(chId, dispMatch[1].trim())) {
       isMatch = true
