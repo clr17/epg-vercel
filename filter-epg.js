@@ -27,6 +27,8 @@ const ID_MAP = {
   'CBSWFOR.us': 'WFOR.us@HD',
   'NBCWJAR.us': 'WJAR101.us@HD',
   'NBCKNBC.us': 'KNBC.us@HD',
+  'FOXWeather.us': 'FoxWeather.us@SD',
+  'WeatherNationTV.us': 'WeatherNation.us@SD',
 }
 
 const KEEP_IDS = new Set(Object.keys(ID_MAP))
