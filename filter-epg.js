@@ -36,6 +36,8 @@ const ID_MAP = {
   'FOXNet.us': 'Fox.us@East',
   'RTNews.us': 'RTNews.us@SD',
   'ESPN.us': 'ESPN.us@HD',
+  'ESPNU.us': 'ESPNU.us@SD',
+  'ESPNEWS.us': 'ESPNews.us@SD',
 }
 
 const KEEP_IDS = new Set(Object.keys(ID_MAP))
