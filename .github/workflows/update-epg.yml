@@ -8,7 +8,7 @@ on:
 jobs:
   download-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -16,13 +16,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Clone iptv-org/epg and grab EPG data
+      - name: Download and filter EPG
         run: |
-          git clone --depth 1 https://github.com/iptv-org/epg.git /tmp/epg
-          cd /tmp/epg
-          npm install
-          npm run grab --- --channels=${{ github.workspace }}/channels.xml --output=${{ github.workspace }}/public/guide.xml --maxConnections=5
-          ls -lh ${{ github.workspace }}/public/guide.xml
+          curl -sL "https://iptv-epg.org/files/epg-us.xml.gz" -o epg-us.xml.gz
+          node filter-epg.js epg-us.xml.gz public/guide.xml
+          ls -lh public/guide.xml
 
       - name: Deploy to Vercel
         run: |
