@@ -4,7 +4,7 @@ const zlib = require('zlib')
 // Exact channel IDs to keep (from iptv-epg.org)
 const KEEP_IDS = new Set([
   // National cable
-  'AccuWeather.us', 'NewsmaxTV.us', 'ACCNetwork.us',
+  'AccuWeather.us', 'Accuweather.us', 'NewsmaxTV.us', 'ACCNetwork.us',
   'BBCNewsNorthAmerica.us', 'BigTen.us', 'BigTen2.us', 'BigTen4.us',
   'FoxEast_WNYW.us', 'FoxNewsChannel.us', 'FoxSports1.us',
   'NewsNation.us', 'NFLNetwork.us', 'SmithsonianNetwork.us',
@@ -34,6 +34,9 @@ function matchesChannel(id, name) {
   const upper = name.toUpperCase()
   if (upper.includes('HAWKEYE') || upper.includes('BUCKEYES') || upper.includes('KOKOMO')) return false
   if (upper.includes('PLUTO') || upper.includes('SXM')) return false
+  if (upper.includes('ROANOKE') || upper.includes('LYNCHBURG')) return false
+  if (upper.includes('4K EVENTS')) return false
+  if (upper.includes('ANTENNA')) return false
   return KEYWORDS.some(k => upper.includes(k.toUpperCase()))
 }
 
