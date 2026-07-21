@@ -13,8 +13,8 @@ https://aegis-cloudfront-1.tubi.video/8d1f164d-34ef-4f70-b948-ae33826a0aaa/playl
 https://linear-692.frequency.stream/dist/stirr/692/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="KEYETV421.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="Local",CBS 42 Austin (KEYE) (1080p)
 https://linear-704.frequency.stream/dist/stirr/704/hls/master/playlist.m3u8
-#EXTINF:-1 tvg-id="WJAR101.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/WJAR_LOGO_NBC10_Solid_Calls_vert_blu.png/960px-WJAR_LOGO_NBC10_Solid_Calls_vert_blu.png" group-title="Local",NBC 10 Providence (WJAR) (1080p)
-https://pubads.g.doubleclick.net/ssai/event/kpannrCBQ5KwdV3Hag3Wog/master.m3u8
+#EXTINF:-1 tvg-id="KCRATV581.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/KCRA_logo_2018.svg/960px-KCRA_logo_2018.svg.png" group-title="Local",NBC 3 Sacramento (KCRA) (720p)
+https://aegis-cloudfront-1.tubi.video/5e3aff30-070f-4951-aa59-5ca415acb3c1/playlist.m3u8
 #EXTINF:-1 tvg-id="Fox.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/960px-Fox_Networks_Group_US_logo.svg.png" group-title="Network",Fox (720p)
 http://stream.cammonitorplus.net/1752/index.m3u8
 #EXTINF:-1 tvg-id="FoxNewsChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="News",Fox News Channel (720p)

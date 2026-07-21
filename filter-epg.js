@@ -23,7 +23,7 @@ const ID_MAP = {
   'CBSKCCI.us': 'KCCI81.us@HD',
   'CBSWPEC.us': 'WPEC121.us@HD',
   'CBSKEYE.us': 'KEYETV421.us@HD',
-  'NBCWJAR.us': 'WJAR101.us@HD',
+  'NBCKCRA.us': 'KCRATV581.us@HD',
   'FOXWeather.us': 'FoxWeather.us@SD',
   'WeatherNationTV.us': 'WeatherNation.us@SD',
   'Newsmax2.us': 'Newsmax2.us@SD',
