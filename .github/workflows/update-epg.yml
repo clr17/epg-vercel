@@ -24,8 +24,6 @@ jobs:
 
       - name: Deploy to Vercel
         run: |
-          cp vercel.json public/
-          cd public
           npx vercel@latest deploy --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
         env:
           VERCEL_ORG_ID: ${{ secrets.ORG_ID }}
