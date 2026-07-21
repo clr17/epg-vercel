@@ -26,6 +26,7 @@ const ID_MAP = {
   'NBCKCRA.us': 'KCRATV581.us@HD',
   'FOXWeather.us': 'FoxWeather.us@SD',
   'WeatherNationTV.us': 'WeatherNation.us@SD',
+  'TheWeatherChannel.us': 'TheWeatherChannel.us@SD',
   'Newsmax2.us': 'Newsmax2.us@SD',
   'ScrippsNews.us': 'ScrippsNews.us@SD',
   'AlJazeera.us': 'AlJazeera.qa@English',
