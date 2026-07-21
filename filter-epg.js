@@ -1,21 +1,40 @@
 const fs = require('fs')
 const zlib = require('zlib')
 
-const CHANNELS = [
-  'AccuWeather', 'Newsmax TV', 'NewsMax', 'ACC Network',
-  'BBC News', 'BBC World News', 'Big Ten Network',
-  'FOX East', 'FOX (WNYW)', 'Fox News', 'Fox News Channel',
-  'Fox Sports 1', 'FS1', 'NewsNation',
-  'NFL Network', 'Smithsonian', 'Nick Jr', 'Nick Jr.',
-  'Comedy Central', 'One America News', 'OAN',
-  'KOMO', 'KMGH', 'WFTV', 'KNXV',
-  'KCCI', 'WPEC', 'KEYE', 'WFOR', 'WJAR', 'KNBC',
+// Exact channel IDs to keep (from iptv-epg.org)
+const KEEP_IDS = new Set([
+  // National cable
+  'AccuWeather.us', 'NewsmaxTV.us', 'ACCNetwork.us',
+  'BBCNewsNorthAmerica.us', 'BigTen.us', 'BigTen2.us', 'BigTen4.us',
+  'FoxEast_WNYW.us', 'FoxNewsChannel.us', 'FoxSports1.us',
+  'NewsNation.us', 'NFLNetwork.us', 'SmithsonianNetwork.us',
+  'NickJr.us', 'ComedyCentral.us',
+  'OANPlus.us', 'OANPlus.pluto',
+  // Local affiliates
+  'ABCKOMO.us', 'ABCKMGH.us', 'ABCWFTV.us', 'ABCKNXV.us',
+  'CBSKCCI.us', 'CBSWPEC.us', 'CBSKEYE.us', 'CBSWFOR.us',
+  'NBCWJAR.us', 'NBCWest_KNBC.us', 'NBCKNBC.us',
+  // Syndicated
+  'MacGyver.synd', 'AmericanNinjaWarrior.synd',
+])
+
+// Broad keyword matching for discovery (fallback)
+const KEYWORDS = [
+  'AccuWeather', 'Newsmax', 'ACC Network', 'BBC News', 'Big Ten',
+  'FOX East', 'Fox News', 'Fox Sports', 'FS1', 'NewsNation',
+  'NFL Network', 'Smithsonian', 'Nick Jr', 'Comedy Central',
+  'OAN', 'One America News',
+  'KOMO', 'KMGH', 'WFTV', 'KNXV', 'KCCI', 'WPEC', 'KEYE', 'WFOR', 'WJAR', 'KNBC',
   'MacGyver', 'American Ninja Warrior',
 ]
 
-function matchesChannel(name) {
+function matchesChannel(id, name) {
+  if (KEEP_IDS.has(id)) return true
+  // Fallback: keyword match but exclude false positives
   const upper = name.toUpperCase()
-  return CHANNELS.some(ch => upper.includes(ch.toUpperCase()))
+  if (upper.includes('HAWKEYE') || upper.includes('BUCKEYES') || upper.includes('KOKOMO')) return false
+  if (upper.includes('PLUTO') || upper.includes('SXM')) return false
+  return KEYWORDS.some(k => upper.includes(k.toUpperCase()))
 }
 
 const INPUT = process.argv[2] || 'epg-us.xml.gz'
@@ -40,7 +59,7 @@ while ((chMatch = channelRegex.exec(xml)) !== null) {
   let dispMatch
   let isMatch = false
   while ((dispMatch = displayRegex.exec(chBody)) !== null) {
-    if (matchesChannel(dispMatch[1].trim())) {
+    if (matchesChannel(chId, dispMatch[1].trim())) {
       isMatch = true
       break
     }
