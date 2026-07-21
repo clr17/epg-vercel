@@ -29,6 +29,12 @@ const ID_MAP = {
   'NBCKNBC.us': 'KNBC.us@HD',
   'FOXWeather.us': 'FoxWeather.us@SD',
   'WeatherNationTV.us': 'WeatherNation.us@SD',
+  'Newsmax2.us': 'Newsmax2.us@SD',
+  'ScrippsNews.us': 'ScrippsNews.us@SD',
+  'AlJazeera.us': 'AlJazeera.qa@English',
+  'LiveNOWfromFOX.us': 'LiveNOWfromFOX.us@SD',
+  'FOXNet.us': 'Fox.us@East',
+  'RTNews.us': 'RTNews.us@SD',
 }
 
 const KEEP_IDS = new Set(Object.keys(ID_MAP))
