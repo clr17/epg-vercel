@@ -8,7 +8,6 @@ const ID_MAP = {
   'ACCNetwork.us': 'ACCNetwork.us@SD',
   'BBCNewsNorthAmerica.us': 'BBCNews.uk@NorthAmerica',
   'BigTen.us': 'BigTen.us@SD',
-  'FoxEast_WNYW.us': 'WNYW51.us@HD',
   'FoxNewsChannel.us': 'FoxNewsChannel.us@SD',
   'FoxSports1.us': 'FoxSports1.us@HD',
   'NewsNation.us': 'NewsNation.us@SD',
