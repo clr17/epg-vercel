@@ -80,29 +80,29 @@ const KEEP_IDS = new Set(Object.keys(ID_MAP))
 // Channels not listed default to Eastern (no adjustment)
 // Values: hours to SUBTRACT from UTC to get Eastern display time
 const TZ_MAP = {
-  // Pacific (UTC-7): add 3h to convert to Eastern for TiviMate
-  'KCRATV581.us@HD': 3,   // Sacramento
-  'KATU321.us@HD': 3,     // Portland OR
-  'KGTV101.us@HD': 3,     // San Diego
-  'KTVU41.us@HD': 3,      // SF/Oakland
-  'KTTV111.us@HD': 3,     // LA
-  'KNSD481.us@HD': 3,     // San Diego
-  'KSNV31.us@HD': 3,      // Las Vegas
-  'KTNVTV331.us@HD': -7,  // Las Vegas
-  // Mountain (UTC-6): add 2h to convert to Eastern for TiviMate
-  'KOATTV71.us@HD': 2,    // Albuquerque
-  'KMGHTV71.us@HD': 2,    // Denver
-  'KDBCTV41.us@HD': 2,    // El Paso
-  'KUTV21.us@HD': 2,      // Salt Lake City
-  'KGUNTV91.us@HD': 2,    // Tucson
-  // Central (UTC-5): add 1h to convert to Eastern for TiviMate
-  'KSTPTV51.us@HD': 1,    // St Paul MN
-  'KCCI81.us@HD': 1,      // Des Moines
-  'KEYETV421.us@HD': 1,   // Austin
-  'WLUKTV141.us@HD': 1,   // Green Bay
-  'WWMT31.us@HD': 1,      // Kalamazoo
-  'KMTVTV31.us@HD': 1,    // Omaha
-  'WISNTV121.us@HD': 1,   // Milwaukee
+  // Pacific (UTC-7): subtract 4h to get Eastern equivalent
+  'KCRATV581.us@HD': -4,  // Sacramento
+  'KATU321.us@HD': -4,    // Portland OR
+  'KGTV101.us@HD': -4,    // San Diego
+  'KTVU41.us@HD': -4,     // SF/Oakland
+  'KTTV111.us@HD': -4,    // LA
+  'KNSD481.us@HD': -4,    // San Diego
+  'KSNV31.us@HD': -4,     // Las Vegas
+  'KTNVTV331.us@HD': -4,  // Las Vegas
+  // Mountain (UTC-6): subtract 3h to get Eastern equivalent
+  'KOATTV71.us@HD': -3,   // Albuquerque
+  'KMGHTV71.us@HD': -3,   // Denver
+  'KDBCTV41.us@HD': -3,   // El Paso
+  'KUTV21.us@HD': -3,     // Salt Lake City
+  'KGUNTV91.us@HD': -3,   // Tucson
+  // Central (UTC-5): subtract 2h to get Eastern equivalent
+  'KSTPTV51.us@HD': -2,   // St Paul MN
+  'KCCI81.us@HD': -2,     // Des Moines
+  'KEYETV421.us@HD': -2,  // Austin
+  'WLUKTV141.us@HD': -2,  // Green Bay
+  'WWMT31.us@HD': -2,     // Kalamazoo
+  'KMTVTV31.us@HD': -2,   // Omaha
+  'WISNTV121.us@HD': -2,  // Milwaukee
   // Eastern (UTC-4): no adjustment
   'WNYW51.us@HD': 0,      // NYC
   'WNBC471.us@HD': 0,     // NYC
