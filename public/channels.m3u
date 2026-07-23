@@ -41,8 +41,6 @@ https://linear-710.frequency.stream/dist/stirr/710/hls/master/playlist.m3u8
 https://amg01942-amg01942c2-stirr-us-10173.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="WSYX61.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 6 Columbus (WSYX) (1080p)
 https://linear-689.frequency.stream/dist/stirr/689/hls/master/playlist.m3u8
-#EXTINF:-1 tvg-id="KOATTV71.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 7 Albuquerque (KOAT) (720p)
-https://aegis-cloudfront-1.tubi.video/2dba5dd9-4097-45e3-b169-56735cc48476/playlist.m3u8
 #EXTINF:-1 tvg-id="WJLATV71.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 7 DC (WJLA) (1080p)
 https://linear-681.frequency.stream/dist/stirr/681/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="KGUNTV91.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 9 Tucson (KGUN) (720p)
