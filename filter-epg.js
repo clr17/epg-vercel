@@ -33,11 +33,8 @@ const ID_MAP = {
   // Original8 locals (from tvpassport.com, now using iptv-epg.org)
   'FoxEast_WNYW.us': 'WNYW51.us@HD',
   'ABCWCVB.us': 'WCVBTV501.us@SD',
-
   'ABCWFTV.us': 'WFTV91.us@HD',
-
   'CBSWPEC.us': 'WPEC121.us@HD',
-
   'NBCKCRA.us': 'KCRATV581.us@HD',
 
   // FOX locals
@@ -54,16 +51,12 @@ const ID_MAP = {
   // CBS locals
   'CBSWCBS.us': 'WCBSTV21.us@HD',
   'CBSKUTV.us': 'KUTV21.us@HD',
-
-
   'CBSKDBC.us': 'KDBCTV41.us@HD',
   'CBSWTVR.us': 'WTVRTV61.us@HD',
   // ABC locals
   'ABCKATU.us': 'KATU321.us@HD',
   'ABCKSTP.us': 'KSTPTV51.us@HD',
   'ABCWSYX.us': 'WSYX61.us@HD',
-
-
   'ABCWJLA.us': 'WJLATV71.us@HD',
 
   'ABCKGUN.us': 'KGUNTV91.us@HD',
@@ -90,18 +83,12 @@ const TZ_MAP = {
   'KSNV31.us@HD': -4,     // Las Vegas
   'KTNVTV331.us@HD': -4,  // Las Vegas
   // Mountain (UTC-6): subtract 4h to get Eastern equivalent
-
-
   'KDBCTV41.us@HD': -4,   // El Paso
   'KUTV21.us@HD': -4,     // Salt Lake City
   'KGUNTV91.us@HD': -4,   // Tucson
   // Central (UTC-5): subtract 4h to get Eastern equivalent
   'KSTPTV51.us@HD': -4,   // St Paul MN
-
-
   'WLUKTV141.us@HD': -4,  // Green Bay
-
-
   'WISNTV121.us@HD': -4,  // Milwaukee
   // Eastern (UTC-4): no adjustment
   'WNYW51.us@HD': 0,      // NYC
@@ -114,8 +101,6 @@ const TZ_MAP = {
   'WFTV91.us@HD': 0,      // Orlando
   'WPEC121.us@HD': 0,     // West Palm Beach
   'WJLATV71.us@HD': 0,    // DC
-
-
   'WSYX61.us@HD': 0,      // Columbus OH
   'WLOS131.us@HD': 0,     // Asheville NC
   'WTVRTV61.us@HD': 0,    // Richmond VA
