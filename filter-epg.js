@@ -33,11 +33,11 @@ const ID_MAP = {
   // Original8 locals (from tvpassport.com, now using iptv-epg.org)
   'FoxEast_WNYW.us': 'WNYW51.us@HD',
   'ABCWCVB.us': 'WCVBTV501.us@SD',
-  'ABCKMGH.us': 'KMGHTV71.us@HD',
+
   'ABCWFTV.us': 'WFTV91.us@HD',
-  'CBSKCCI.us': 'KCCI81.us@HD',
+
   'CBSWPEC.us': 'WPEC121.us@HD',
-  'CBSKEYE.us': 'KEYETV421.us@HD',
+
   'NBCKCRA.us': 'KCRATV581.us@HD',
 
   // FOX locals
@@ -54,18 +54,18 @@ const ID_MAP = {
   // CBS locals
   'CBSWCBS.us': 'WCBSTV21.us@HD',
   'CBSKUTV.us': 'KUTV21.us@HD',
-  'CBSWWMT.us': 'WWMT31.us@HD',
-  'CBSKMTV.us': 'KMTVTV31.us@HD',
+
+
   'CBSKDBC.us': 'KDBCTV41.us@HD',
   'CBSWTVR.us': 'WTVRTV61.us@HD',
   // ABC locals
   'ABCKATU.us': 'KATU321.us@HD',
   'ABCKSTP.us': 'KSTPTV51.us@HD',
   'ABCWSYX.us': 'WSYX61.us@HD',
-  'ABCWRTV.us': 'WRTV61.us@HD',
-  'ABCKOAT.us': 'KOATTV71.us@HD',
+
+
   'ABCWJLA.us': 'WJLATV71.us@HD',
-  'ABCWMUR.us': 'WMURTV91.us@HD',
+
   'ABCKGUN.us': 'KGUNTV91.us@HD',
   'ABCKGTV.us': 'KGTV101.us@HD',
   'ABCWISN.us': 'WISNTV121.us@HD',
@@ -90,18 +90,18 @@ const TZ_MAP = {
   'KSNV31.us@HD': -4,     // Las Vegas
   'KTNVTV331.us@HD': -4,  // Las Vegas
   // Mountain (UTC-6): subtract 4h to get Eastern equivalent
-  'KOATTV71.us@HD': -4,   // Albuquerque
-  'KMGHTV71.us@HD': -4,   // Denver
+
+
   'KDBCTV41.us@HD': -4,   // El Paso
   'KUTV21.us@HD': -4,     // Salt Lake City
   'KGUNTV91.us@HD': -4,   // Tucson
   // Central (UTC-5): subtract 4h to get Eastern equivalent
   'KSTPTV51.us@HD': -4,   // St Paul MN
-  'KCCI81.us@HD': -4,     // Des Moines
-  'KEYETV421.us@HD': -4,  // Austin
+
+
   'WLUKTV141.us@HD': -4,  // Green Bay
-  'WWMT31.us@HD': -4,     // Kalamazoo
-  'KMTVTV31.us@HD': -4,   // Omaha
+
+
   'WISNTV121.us@HD': -4,  // Milwaukee
   // Eastern (UTC-4): no adjustment
   'WNYW51.us@HD': 0,      // NYC
@@ -114,8 +114,8 @@ const TZ_MAP = {
   'WFTV91.us@HD': 0,      // Orlando
   'WPEC121.us@HD': 0,     // West Palm Beach
   'WJLATV71.us@HD': 0,    // DC
-  'WMURTV91.us@HD': 0,    // Manchester NH
-  'WRTV61.us@HD': 0,      // Indianapolis
+
+
   'WSYX61.us@HD': 0,      // Columbus OH
   'WLOS131.us@HD': 0,     // Asheville NC
   'WTVRTV61.us@HD': 0,    // Richmond VA
