@@ -16,10 +16,22 @@ jobs:
         with:
           node-version: 20
 
-      - name: Download and filter EPG
+      - name: Download and filter national EPG
         run: |
           curl -sL "https://iptv-epg.org/files/epg-us.xml.gz" -o epg-us.xml.gz
-          node filter-epg.js epg-us.xml.gz public/guide.xml
+          node filter-epg.js epg-us.xml.gz national.xml
+          ls -lh national.xml
+
+      - name: Grab local EPG from tvpassport.com
+        run: |
+          git clone --depth 1 https://github.com/iptv-org/epg.git epg-src
+          cd epg-src && npm install
+          npm run grab --- --channels=../channels.xml --output=../local.xml --delay=1000 --maxConnections=5
+          cd .. && ls -lh local.xml
+
+      - name: Merge and deploy
+        run: |
+          node merge-epg.js
           ls -lh public/guide.xml
 
       - name: Deploy to Vercel

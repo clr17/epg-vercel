@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="tvpassport.com" site_id="abc-wftv-orlando-fl-hd/5725" lang="en" xmltv_id="WFTV91.us@HD">ABC (WFTV) Orlando, FL HD</channel>
+  <channel site="tvpassport.com" site_id="cbs-wpec-west-palm-beach-fl-hd/8256" lang="en" xmltv_id="WPEC121.us@HD">CBS (WPEC) West Palm Beach, FL HD</channel>
+  <channel site="tvpassport.com" site_id="cbs-kcci-des-moines-ia-hd/6377" lang="en" xmltv_id="KCCI81.us@HD">CBS (KCCI) Des Moines, IA HD</channel>
+  <channel site="tvpassport.com" site_id="cbs-keye-austin-tx-hd/4831" lang="en" xmltv_id="KEYETV421.us@HD">CBS (KEYE) Austin, TX HD</channel>
+  <channel site="tvpassport.com" site_id="abc-wcvb-boston-ma-hd/3661" lang="en" xmltv_id="WCVBTV501.us@SD">ABC (WCVB) Boston, MA HD</channel>
+  <channel site="tvpassport.com" site_id="abc-kmgh-denver-co-hd/5723" lang="en" xmltv_id="KMGHTV71.us@HD">ABC (KMGH) Denver, CO HD</channel>
+  <channel site="tvpassport.com" site_id="nbc-kcra-sacramento-ca-hd/6260" lang="en" xmltv_id="KCRATV581.us@HD">NBC (KCRA) Sacramento, CA HD</channel>
+  <channel site="tvpassport.com" site_id="fox-wnyw-new-york-ny-hd/4557" lang="en" xmltv_id="WNYW51.us@HD">FOX (WNYW) New York, NY HD</channel>
+</channels>
