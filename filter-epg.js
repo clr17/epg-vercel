@@ -88,7 +88,7 @@ const TZ_MAP = {
   'KTTV111.us@HD': 3,     // LA
   'KNSD481.us@HD': 3,     // San Diego
   'KSNV31.us@HD': 3,      // Las Vegas
-  'KTNVTV331.us@HD': 3,   // Las Vegas
+  'KTNVTV331.us@HD': -7,  // Las Vegas
   // Mountain (UTC-6): add 2h to convert to Eastern for TiviMate
   'KOATTV71.us@HD': 2,    // Albuquerque
   'KMGHTV71.us@HD': 2,    // Denver
