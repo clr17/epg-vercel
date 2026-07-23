@@ -31,6 +31,8 @@ const ID_MAP = {
   'ESPNU.us': 'ESPNU.us@SD',
   'ESPNEWS.us': 'ESPNews.us@SD',
   'SECNetwork.us': 'SECNetwork.us@SD',
+  'TBS.us': 'TBS.us@East',
+  'TNT.us': 'TNT.us@East',
   'Univision.us': 'Univision.us@East',
 
   // Original8 locals (from tvpassport.com, now using iptv-epg.org)
