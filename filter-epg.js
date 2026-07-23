@@ -32,6 +32,7 @@ const ID_MAP = {
   'ESPNEWS.us': 'ESPNews.us@SD',
   'SECNetwork.us': 'SECNetwork.us@SD',
   'TBS.us': 'TBS.us@East',
+  'Telemundo.us': 'Telemundo.us@East',
   'TNT.us': 'TNT.us@East',
   'Univision.us': 'Univision.us@East',
 
