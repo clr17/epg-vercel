@@ -89,20 +89,20 @@ const TZ_MAP = {
   'KNSD481.us@HD': -4,    // San Diego
   'KSNV31.us@HD': -4,     // Las Vegas
   'KTNVTV331.us@HD': -4,  // Las Vegas
-  // Mountain (UTC-6): subtract 3h to get Eastern equivalent
-  'KOATTV71.us@HD': -3,   // Albuquerque
-  'KMGHTV71.us@HD': -3,   // Denver
-  'KDBCTV41.us@HD': -3,   // El Paso
-  'KUTV21.us@HD': -3,     // Salt Lake City
-  'KGUNTV91.us@HD': -3,   // Tucson
-  // Central (UTC-5): subtract 2h to get Eastern equivalent
-  'KSTPTV51.us@HD': -2,   // St Paul MN
-  'KCCI81.us@HD': -2,     // Des Moines
-  'KEYETV421.us@HD': -2,  // Austin
-  'WLUKTV141.us@HD': -2,  // Green Bay
-  'WWMT31.us@HD': -2,     // Kalamazoo
-  'KMTVTV31.us@HD': -2,   // Omaha
-  'WISNTV121.us@HD': -2,  // Milwaukee
+  // Mountain (UTC-6): subtract 4h to get Eastern equivalent
+  'KOATTV71.us@HD': -4,   // Albuquerque
+  'KMGHTV71.us@HD': -4,   // Denver
+  'KDBCTV41.us@HD': -4,   // El Paso
+  'KUTV21.us@HD': -4,     // Salt Lake City
+  'KGUNTV91.us@HD': -4,   // Tucson
+  // Central (UTC-5): subtract 4h to get Eastern equivalent
+  'KSTPTV51.us@HD': -4,   // St Paul MN
+  'KCCI81.us@HD': -4,     // Des Moines
+  'KEYETV421.us@HD': -4,  // Austin
+  'WLUKTV141.us@HD': -4,  // Green Bay
+  'WWMT31.us@HD': -4,     // Kalamazoo
+  'KMTVTV31.us@HD': -4,   // Omaha
+  'WISNTV121.us@HD': -4,  // Milwaukee
   // Eastern (UTC-4): no adjustment
   'WNYW51.us@HD': 0,      // NYC
   'WNBC471.us@HD': 0,     // NYC
