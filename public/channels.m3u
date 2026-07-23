@@ -15,6 +15,62 @@ https://linear-692.frequency.stream/dist/stirr/692/hls/master/playlist.m3u8
 https://linear-704.frequency.stream/dist/stirr/704/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="KCRATV581.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/KCRA_logo_2018.svg/960px-KCRA_logo_2018.svg.png" group-title="Local",NBC 3 Sacramento (KCRA) (720p)
 https://aegis-cloudfront-1.tubi.video/5e3aff30-070f-4951-aa59-5ca415acb3c1/playlist.m3u8
+#EXTINF:-1 tvg-id="WTTG51.us@HD" tvg-logo="https://i.imgur.com/ktLKla7.png" group-title="Local",FOX 5 DC (WTTG) (1080p)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-fox5dcwttg-vizious/playlist.m3u8
+#EXTINF:-1 tvg-id="KTTV111.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/960px-Fox_Networks_Group_US_logo.svg.png" group-title="Local",FOX 11 LA (KTTV) (1080p)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-fox11losangeleskttv-vizious/playlist.m3u8
+#EXTINF:-1 tvg-id="KTVU41.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/960px-Fox_Networks_Group_US_logo.svg.png" group-title="Local",FOX 2 SF (KTVU) (720p)
+https://aegis-cloudfront-1.tubi.video/8d9284ec-c451-4e51-a1d4-d16e5c8972af/index.m3u8
+#EXTINF:-1 tvg-id="WLUKTV141.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/960px-Fox_Networks_Group_US_logo.svg.png" group-title="Local",FOX 11 Green Bay (WLUK) (1080p)
+https://linear-702.frequency.stream/dist/stirr/702/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="WTVT131.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/960px-Fox_Networks_Group_US_logo.svg.png" group-title="Local",FOX 13 Tampa (WTVT) (1080p)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-wtvt-lgus/playlist.m3u8
+#EXTINF:-1 tvg-id="WNBC471.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/960px-NBC_logo_2022_%28vertical%29.svg.png" group-title="Local",NBC 4 New York (WNBC) (1080p)
+http://stream.cammonitorplus.net/1800/index.m3u8
+#EXTINF:-1 tvg-id="KNSD481.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/960px-NBC_logo_2022_%28vertical%29.svg.png" group-title="Local",NBC 7 San Diego (KNSD) (1080p)
+https://nbculocallive.akamaized.net/hls/live/2037098/sandiego/stream1/master.m3u8
+#EXTINF:-1 tvg-id="KSNV31.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/KSNV_logo.svg/960px-KSNV_logo.svg.png" group-title="Local",NBC 3 Las Vegas (KSNV) (1080p)
+https://linear-708.frequency.stream/dist/stirr/708/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="WBTSCD151.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/WBTS-LD_NBC_10_Boston_logo.png/960px-WBTS-LD_NBC_10_Boston_logo.png" group-title="Local",NBC 10 Boston (WBTS) (1080p)
+https://d368vp0qqzvkid.cloudfront.net/11603/88889713/hls/master.m3u8?ads.xumo_channelId=88889713a&ads.xumo_ifaType=&ads.xumo_providerId=3820&ads.xumo_providerName=NBCNBOS
+#EXTINF:-1 tvg-id="WCBSTV21.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/CBS_2.svg/960px-CBS_2.svg.png" group-title="Local",CBS 2 New York (WCBS) (720p)
+http://206.212.244.63/32/index.m3u8
+#EXTINF:-1 tvg-id="KUTV21.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="Local",CBS 2 Salt Lake (KUTV) (1080p)
+https://linear-707.frequency.stream/dist/stirr/707/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="WWMT31.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="Local",CBS 3 Kalamazoo (WWMT) (1080p)
+https://linear-701.frequency.stream/dist/stirr/701/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="KMTVTV31.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="Local",CBS 3 Omaha (KMTV) (720p)
+https://aegis-cloudfront-1.tubi.video/0b16cabe-a8fd-4d91-99e5-3efb7aa740cc/playlist.m3u8
+#EXTINF:-1 tvg-id="KDBCTV41.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="Local",CBS 4 El Paso (KDBC) (1080p)
+https://linear-706.frequency.stream/dist/stirr/706/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="WTVRTV61.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="Local",CBS 6 Richmond (WTVR) (720p)
+https://aegis-cloudfront-1.tubi.video/d8fc1d6c-fd55-45c8-973b-b7327ee1a6e0/playlist.m3u8
+#EXTINF:-1 tvg-id="KATU321.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/KATU_logo.svg/960px-KATU_logo.svg.png" group-title="Local",ABC 2 Portland (KATU) (1080p)
+https://linear-710.frequency.stream/dist/stirr/710/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="KSTPTV51.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/5_Eyewitness_News_logo.svg/960px-5_Eyewitness_News_logo.svg.png" group-title="Local",ABC 5 St Paul (KSTP) (1080p)
+https://amg01942-amg01942c2-stirr-us-10173.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="WSYX61.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 6 Columbus (WSYX) (1080p)
+https://linear-689.frequency.stream/dist/stirr/689/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="WRTV61.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 6 Indianapolis (WRTV) (720p)
+https://aegis-cloudfront-1.tubi.video/bc9ff1c7-4dc1-4e36-9ef0-25b28c595ada/playlist.m3u8
+#EXTINF:-1 tvg-id="KOATTV71.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 7 Albuquerque (KOAT) (720p)
+https://aegis-cloudfront-1.tubi.video/2dba5dd9-4097-45e3-b169-56735cc48476/playlist.m3u8
+#EXTINF:-1 tvg-id="WJLATV71.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 7 DC (WJLA) (1080p)
+https://linear-681.frequency.stream/dist/stirr/681/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="WMURTV91.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 9 Manchester (WMUR) (720p)
+https://aegis-cloudfront-1.tubi.video/b77ffe96-c5d1-43a7-8687-306ff244d725/playlist.m3u8
+#EXTINF:-1 tvg-id="KGUNTV91.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 9 Tucson (KGUN) (720p)
+https://aegis-cloudfront-1.tubi.video/a53514a7-f2aa-4d34-802e-c2b5594fc0d7/playlist.m3u8
+#EXTINF:-1 tvg-id="KGTV101.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 10 San Diego (KGTV) (720p)
+https://aegis-cloudfront-1.tubi.video/1a352414-3a30-4f42-b14b-c091d02a5e45/playlist.m3u8
+#EXTINF:-1 tvg-id="WISNTV121.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 12 Milwaukee (WISN) (720p)
+https://aegis-cloudfront-1.tubi.video/ec903a48-3638-4d0b-ac89-813e147bca58/playlist.m3u8
+#EXTINF:-1 tvg-id="WLOS131.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 13 Asheville (WLOS) (1080p)
+https://linear-695.frequency.stream/dist/stirr/695/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="KTNVTV331.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 13 Las Vegas (KTNV) (720p)
+https://content.uplynk.com/channel/39919d3f7a074eefa8bf579214e952f9.m3u8
+#EXTINF:-1 tvg-id="KNXVTV611.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WWAY_logo.png/960px-WWAY_logo.png" group-title="Local",ABC 15 Phoenix (KNXV) (720p)
+https://aegis-cloudfront-1.tubi.video/e923f4ce-7229-4e01-a25e-d453993dab82/playlist.m3u8
 #EXTINF:-1 tvg-id="Fox.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/960px-Fox_Networks_Group_US_logo.svg.png" group-title="Network",Fox (720p)
 http://stream.cammonitorplus.net/1752/index.m3u8
 #EXTINF:-1 tvg-id="FoxNewsChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="News",Fox News Channel (720p)

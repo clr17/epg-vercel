@@ -29,6 +29,39 @@ const ID_MAP = {
   'ESPN.us': 'ESPN.us@HD',
   'ESPNU.us': 'ESPNU.us@SD',
   'ESPNEWS.us': 'ESPNews.us@SD',
+
+  // FOX locals
+  'FOXWTTG.us': 'WTTG51.us@HD',
+  'FOXKTTV.us': 'KTTV111.us@HD',
+  'FOXKTVU.us': 'KTVU41.us@HD',
+  'FOXWLUK.us': 'WLUKTV141.us@HD',
+  'FOXWTVT.us': 'WTVT131.us@HD',
+  // NBC locals
+  'NBCWNBC.us': 'WNBC471.us@HD',
+  'NBCKNSD.us': 'KNSD481.us@HD',
+  'NBCKSNV.us': 'KSNV31.us@HD',
+  'NBCWBTS.us': 'WBTSCD151.us@HD',
+  // CBS locals
+  'CBSWCBS.us': 'WCBSTV21.us@HD',
+  'CBSKUTV.us': 'KUTV21.us@HD',
+  'CBSWWMT.us': 'WWMT31.us@HD',
+  'CBSKMTV.us': 'KMTVTV31.us@HD',
+  'CBSKDBC.us': 'KDBCTV41.us@HD',
+  'CBSWTVR.us': 'WTVRTV61.us@HD',
+  // ABC locals
+  'ABCKATU.us': 'KATU321.us@HD',
+  'ABCKSTP.us': 'KSTPTV51.us@HD',
+  'ABCWSYX.us': 'WSYX61.us@HD',
+  'ABCWRTV.us': 'WRTV61.us@HD',
+  'ABCKOAT.us': 'KOATTV71.us@HD',
+  'ABCWJLA.us': 'WJLATV71.us@HD',
+  'ABCWMUR.us': 'WMURTV91.us@HD',
+  'ABCKGUN.us': 'KGUNTV91.us@HD',
+  'ABCKGTV.us': 'KGTV101.us@HD',
+  'ABCWISN.us': 'WISNTV121.us@HD',
+  'ABCWLOS.us': 'WLOS131.us@HD',
+  'ABCKTNV.us': 'KTNVTV331.us@HD',
+  'ABCKNXV.us': 'KNXVTV611.us@HD',
 }
 
 const KEEP_IDS = new Set(Object.keys(ID_MAP))
