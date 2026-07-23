@@ -30,6 +30,16 @@ const ID_MAP = {
   'ESPNU.us': 'ESPNU.us@SD',
   'ESPNEWS.us': 'ESPNews.us@SD',
 
+  // Original8 locals (from tvpassport.com, now using iptv-epg.org)
+  'FoxEast_WNYW.us': 'WNYW51.us@HD',
+  'ABCWCVB.us': 'WCVBTV501.us@SD',
+  'ABCKMGH.us': 'KMGHTV71.us@HD',
+  'ABCWFTV.us': 'WFTV91.us@HD',
+  'CBSKCCI.us': 'KCCI81.us@HD',
+  'CBSWPEC.us': 'WPEC121.us@HD',
+  'CBSKEYE.us': 'KEYETV421.us@HD',
+  'NBCKCRA.us': 'KCRATV581.us@HD',
+
   // FOX locals
   'FOXWTTG.us': 'WTTG51.us@HD',
   'FOXKTTV.us': 'KTTV111.us@HD',
@@ -66,6 +76,51 @@ const ID_MAP = {
 
 const KEEP_IDS = new Set(Object.keys(ID_MAP))
 
+// Timezone offsets relative to Eastern (EDT, UTC-4)
+// Channels not listed default to Eastern (no adjustment)
+// Values: hours to SUBTRACT from UTC to get Eastern display time
+const TZ_MAP = {
+  // Pacific (UTC-7): subtract 3h → shows Pacific time in TiviMate
+  'KCRATV581.us@HD': -3,  // Sacramento
+  'KATU321.us@HD': -3,    // Portland OR
+  'KGTV101.us@HD': -3,    // San Diego
+  'KTVU41.us@HD': -3,     // SF/Oakland
+  'KTTV111.us@HD': -3,    // LA
+  'KNSD481.us@HD': -3,    // San Diego
+  'KSNV31.us@HD': -3,     // Las Vegas
+  'KTNVTV331.us@HD': -3,  // Las Vegas
+  // Mountain (UTC-6): subtract 2h
+  'KOATTV71.us@HD': -2,   // Albuquerque
+  'KMGHTV71.us@HD': -2,   // Denver
+  'KDBCTV41.us@HD': -2,   // El Paso
+  'KUTV21.us@HD': -2,     // Salt Lake City
+  'KGUNTV91.us@HD': -2,   // Tucson
+  // Central (UTC-5): subtract 1h
+  'KSTPTV51.us@HD': -1,   // St Paul MN
+  'KCCI81.us@HD': -1,     // Des Moines
+  'KEYETV421.us@HD': -1,  // Austin
+  'WLUKTV141.us@HD': -1,  // Green Bay
+  'WWMT31.us@HD': -1,     // Kalamazoo
+  'KMTVTV31.us@HD': -1,   // Omaha
+  'WISNTV121.us@HD': -1,  // Milwaukee
+  // Eastern (UTC-4): no adjustment
+  'WNYW51.us@HD': 0,      // NYC
+  'WNBC471.us@HD': 0,     // NYC
+  'WCBSTV21.us@HD': 0,    // NYC
+  'WTTG51.us@HD': 0,      // DC
+  'WTVT131.us@HD': 0,     // Tampa
+  'WBTSCD151.us@HD': 0,   // Boston
+  'WCVBTV501.us@SD': 0,   // Boston
+  'WFTV91.us@HD': 0,      // Orlando
+  'WPEC121.us@HD': 0,     // West Palm Beach
+  'WJLATV71.us@HD': 0,    // DC
+  'WMURTV91.us@HD': 0,    // Manchester NH
+  'WRTV61.us@HD': 0,      // Indianapolis
+  'WSYX61.us@HD': 0,      // Columbus OH
+  'WLOS131.us@HD': 0,     // Asheville NC
+  'WTVRTV61.us@HD': 0,    // Richmond VA
+}
+
 const INPUT = process.argv[2] || 'epg-us.xml.gz'
 const OUTPUT = process.argv[3] || 'guide.xml'
 
@@ -95,7 +150,38 @@ while ((prMatch = programmeRegex.exec(xml)) !== null) {
   const chMatch2 = attrs.match(/channel="([^"]*)"/)
   if (chMatch2 && channelIds.has(chMatch2[1])) {
     const newId = channelIds.get(chMatch2[1])
-    programmeXml.push(prMatch[0].replace(`channel="${chMatch2[1]}"`, `channel="${newId}"`))
+    const tzOffset = TZ_MAP[newId] || 0
+    
+    let progXml = prMatch[0].replace(`channel="${chMatch2[1]}"`, `channel="${newId}"`)
+    
+    // Adjust timezone if needed
+    if (tzOffset !== 0) {
+      progXml = progXml.replace(/(start|stop)="(\d{14})\s+[+-]\d{4}"/g, (match, attr, ts) => {
+        // Parse timestamp: YYYYMMDDHHmmss
+        const y = parseInt(ts.slice(0,4))
+        const m = parseInt(ts.slice(4,6)) - 1
+        const d = parseInt(ts.slice(6,8))
+        const h = parseInt(ts.slice(8,10))
+        const mi = parseInt(ts.slice(10,12))
+        const s = parseInt(ts.slice(12,14))
+        
+        const dt = new Date(Date.UTC(y, m, d, h, mi, s))
+        dt.setUTCHours(dt.getUTCHours() + tzOffset)
+        
+        // Format back to YYYYMMDDHHmmss
+        const pad = n => String(n).padStart(2, '0')
+        const newTs = dt.getUTCFullYear() +
+          pad(dt.getUTCMonth() + 1) +
+          pad(dt.getUTCDate()) +
+          pad(dt.getUTCHours()) +
+          pad(dt.getUTCMinutes()) +
+          pad(dt.getUTCSeconds())
+        
+        return `${attr}="${newTs} -0400"`
+      })
+    }
+    
+    programmeXml.push(progXml)
   }
 }
 
