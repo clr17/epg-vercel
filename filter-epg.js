@@ -80,29 +80,29 @@ const KEEP_IDS = new Set(Object.keys(ID_MAP))
 // Channels not listed default to Eastern (no adjustment)
 // Values: hours to SUBTRACT from UTC to get Eastern display time
 const TZ_MAP = {
-  // Pacific (UTC-7): subtract 3h → shows Pacific time in TiviMate
-  'KCRATV581.us@HD': -3,  // Sacramento
-  'KATU321.us@HD': -3,    // Portland OR
-  'KGTV101.us@HD': -3,    // San Diego
-  'KTVU41.us@HD': -3,     // SF/Oakland
-  'KTTV111.us@HD': -3,    // LA
-  'KNSD481.us@HD': -3,    // San Diego
-  'KSNV31.us@HD': -3,     // Las Vegas
-  'KTNVTV331.us@HD': -3,  // Las Vegas
-  // Mountain (UTC-6): subtract 2h
-  'KOATTV71.us@HD': -2,   // Albuquerque
-  'KMGHTV71.us@HD': -2,   // Denver
-  'KDBCTV41.us@HD': -2,   // El Paso
-  'KUTV21.us@HD': -2,     // Salt Lake City
-  'KGUNTV91.us@HD': -2,   // Tucson
-  // Central (UTC-5): subtract 1h
-  'KSTPTV51.us@HD': -1,   // St Paul MN
-  'KCCI81.us@HD': -1,     // Des Moines
-  'KEYETV421.us@HD': -1,  // Austin
-  'WLUKTV141.us@HD': -1,  // Green Bay
-  'WWMT31.us@HD': -1,     // Kalamazoo
-  'KMTVTV31.us@HD': -1,   // Omaha
-  'WISNTV121.us@HD': -1,  // Milwaukee
+  // Pacific (UTC-7): subtract 7h from UTC
+  'KCRATV581.us@HD': -7,  // Sacramento
+  'KATU321.us@HD': -7,    // Portland OR
+  'KGTV101.us@HD': -7,    // San Diego
+  'KTVU41.us@HD': -7,     // SF/Oakland
+  'KTTV111.us@HD': -7,    // LA
+  'KNSD481.us@HD': -7,    // San Diego
+  'KSNV31.us@HD': -7,     // Las Vegas
+  'KTNVTV331.us@HD': -7,  // Las Vegas
+  // Mountain (UTC-6): subtract 6h from UTC
+  'KOATTV71.us@HD': -6,   // Albuquerque
+  'KMGHTV71.us@HD': -6,   // Denver
+  'KDBCTV41.us@HD': -6,   // El Paso
+  'KUTV21.us@HD': -6,     // Salt Lake City
+  'KGUNTV91.us@HD': -6,   // Tucson
+  // Central (UTC-5): subtract 5h from UTC
+  'KSTPTV51.us@HD': -5,   // St Paul MN
+  'KCCI81.us@HD': -5,     // Des Moines
+  'KEYETV421.us@HD': -5,  // Austin
+  'WLUKTV141.us@HD': -5,  // Green Bay
+  'WWMT31.us@HD': -5,     // Kalamazoo
+  'KMTVTV31.us@HD': -5,   // Omaha
+  'WISNTV121.us@HD': -5,  // Milwaukee
   // Eastern (UTC-4): no adjustment
   'WNYW51.us@HD': 0,      // NYC
   'WNBC471.us@HD': 0,     // NYC
