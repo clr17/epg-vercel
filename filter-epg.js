@@ -27,8 +27,10 @@ const ID_MAP = {
   'FOXNet.us': 'Fox.us@East',
   'RTNews.us': 'RT.ru@HD',
   'ESPN.us': 'ESPN.us@HD',
+  'ESPN2.us': 'ESPN2.us@SD',
   'ESPNU.us': 'ESPNU.us@SD',
   'ESPNEWS.us': 'ESPNews.us@SD',
+  'SECNetwork.us': 'SECNetwork.us@SD',
 
   // Original8 locals (from tvpassport.com, now using iptv-epg.org)
   'FoxEast_WNYW.us': 'WNYW51.us@HD',
